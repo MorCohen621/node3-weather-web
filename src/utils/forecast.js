@@ -13,7 +13,7 @@ const forecast = (lat, long, callback) => {
         }
         else {
             callback(undefined, body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degress out. There is a ' + body.currently.precipProbability + '% chance of rain.'
-             + ' THE MAX TEMP IS ' + body.daily.data[0].apparentTemperatureHigh + ' THE MIN TEMP IS ' + body.daily.data[0].apparentTemperatureLow)
+             + ' The highest is ' + body.daily.data[0].apparentTemperatureHigh +' The lowest is ' + body.daily.data[0].apparentTemperatureLow)
 
         }
     })
